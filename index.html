@@ -15,6 +15,7 @@
       <div class="content clearfix">
         <header class="site clearfix">
           <div class="col one">
+            <!--
             <img
               src="http://www.mackrichardson.com/dev/pixelspace/remote-images/logo-v.jpg"
               alt="591 Industries"
@@ -22,15 +23,16 @@
               height="729"
               id="logo-v"
             />
+            -->
           </div>
           <div class="col two">
             <h4>
               615 Industries (tm) <br />
-              <b>H</b>euristically <b>E</b>ncrypted <b>R</b>eal-Time
-              <b>O</b>perating <b>S</b>ystem (HEROS)
+              <b>F</b>undamental <b>L</b>earning <b>E</b>ducation
+              <b>E</b>xperience (FLEX)
             </h4>
             <p>----------------------------------------</p>
-            <p>HEROS v 1.0.0</p>
+            <p>FLEX 1.1.0</p>
             <p>(c)2019 615 Industries</p>
             <p>- GITHUB REPO LINK: -</p>
           </div>
@@ -39,8 +41,8 @@
         <nav class="site clear">
           <ul>
             <li><a href="#" title="">Return Home</a></li>
-            <li><a href="#" title="">Our Clients</a></li>
-            <li><a href="#" title="">Contact Us</a></li>
+            <li><a href="#" title="">Past Entries</a></li>
+            <li><a href="#" title="">Problems</a></li>
           </ul>
         </nav>
 
@@ -59,11 +61,22 @@
         <br />
 
         <form>
-          <label>Name >></label><input type="text" /><br />
-          <label>Email >></label><input type="text" /><br />
+          <label>Date >></label><input type="text" /><br />
+          <label for="mood"
+            >Mood >>
+            <select name="mood">
+              <option value="option">Select Option</option>
+              <option value="happy">Happy as a clam!</option>
+              <option value="depressed">One Sad Sally.</option>
+              <option value="ok"
+                >I feel nothing. Therefore I am nothing.</option
+              >
+              <option value="nopain">No pain, no gain. Right?</option>
+            </select>
+          </label>
           <label>Subject >></label><input type="text" /><br />
-          <label>Message >></label><textarea id="text" rows="1"></textarea
-          ><br /><br /><br />
+          <label>Entry >></label
+          ><textarea id="text" rows="3" cols="20>"></textarea><br /><br /><br />
           <input type="submit" value="Submit" />
           <a class="button" alt="" href="index.html">Cancel</a>
         </form>
