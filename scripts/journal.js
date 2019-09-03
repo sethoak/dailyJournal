@@ -31,11 +31,13 @@ journalEntry.push({
 
 console.log(journalEntry, "journalEntry");
 
+
+
 //Journal Part 3
 
 const entryTags = ["date", "mood", "subject", "entry"];
 
-const makeJournalEntryComponent = (date, mood, subject, entry) => {
+const makeJournalEntryComponent = (journalEntry) {
   // Create your own HTML structure for a journal entry
   return `
     <div class="entryLog">
@@ -45,5 +47,9 @@ const makeJournalEntryComponent = (date, mood, subject, entry) => {
       <li>${subject}</li>
       <li>${entry}</li>
     </ul>
-  `;
-};
+  `};
+
+const renderJournalEntries = entries => {};
+
+// Invoke the render function
+renderJournalEntries(journalEntries);
