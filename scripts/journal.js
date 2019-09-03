@@ -1,4 +1,6 @@
-$(document).ready(function() {
-  $("#title").focus();
-  $("#text").autosize();
-});
+const journalEntry = {
+  date: "",
+  mode: "",
+  subject: "",
+  entry: ""
+};

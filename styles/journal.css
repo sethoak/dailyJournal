@@ -300,3 +300,9 @@ a.button:hover {
 }
 
 .upper { text-transform: uppercase; }
+
+
+#fieldset {
+    display:flex;
+    flex-direction:column;
+}
