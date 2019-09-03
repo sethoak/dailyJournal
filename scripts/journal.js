@@ -1,3 +1,4 @@
+//Journal Part 2
 const journalEntry = [
   {
     date: "9/2/2019",
@@ -21,8 +22,6 @@ const journalEntry = [
   }
 ];
 
-const entryTags = ["date", "mood", "subject", "entry"];
-
 journalEntry.push({
   date: "9/5/2019",
   mood: "No pain, no gain. Right?",
@@ -31,3 +30,20 @@ journalEntry.push({
 });
 
 console.log(journalEntry, "journalEntry");
+
+//Journal Part 3
+
+const entryTags = ["date", "mood", "subject", "entry"];
+
+const makeJournalEntryComponent = (date, mood, subject, entry) => {
+  // Create your own HTML structure for a journal entry
+  return `
+    <div class="entryLog">
+    <ul>
+      <li>${date}</li>
+      <li>${mood}</li>
+      <li>${subject}</li>
+      <li>${entry}</li>
+    </ul>
+  `;
+};
