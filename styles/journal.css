@@ -8,7 +8,7 @@
 body{
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }*/
 
 @import url(https://fonts.googleapis.com/css?family=VT323);
@@ -83,11 +83,6 @@ h1, h2, h3 h4, h5, h6 {
 	text-transform: uppercase;
 }
 
-a {
-	color: white;	
-	text-decoration: none;	
-}
-
 a:hover {
 	color: red;
 }
@@ -97,43 +92,8 @@ p {
 	margin: 0; 
 }
 	
-span { animation: blink 1s infinite }
-
 ul {
 	list-style: none;
-}
-
-ul a:before,
-p a:before {
-	color: #00dd00;
-	content: ' [ ';
-}
-
-ul a:after,
-p a:after {
-	color: #00dd00;
-	content: ' ] ';	
-}
-
-header.site {
-	margin: 0 0 40px 0;
-	text-transform: uppercase;
-}
-
-nav.site { 
-	margin: 0 0 40px 0;
-  width: 100%;
-}
-
-nav.site ul {
-	padding: 0;
-}
-
-nav.site ul li {
-	display: inline-block;
-  padding: 0 10px;
-  min-width: 250px;
-  width: auto;
 }
 
 .overlay {
@@ -172,45 +132,6 @@ nav.site ul li {
 	z-index: 2;
 }
 
-.col {
-	float: left;
-	padding: 0 20px;
-}
-
-.col.two { width: auto; }
-
-.wrapper {
-  animation: scroll 5s 1;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-}
-
-.content { 
-	animation: scroll 3s 1;
-  	overflow: hidden;
-	padding: 40px; 
-	position: relative;
-	width: 95%;
-}
-
-#logo-v {
-	display: block;
-	height: auto;
-	margin: 0 auto;
-	width: 200px;
-}
-
-img.pip-hero {
-	display: block;
-	float: left;
-	height: auto;
-	margin: 5px 10px 5px 0;
-	width: 120px;
-}
-
-form {}
-
 label {
 	clear: left;
 	display: block;
@@ -239,13 +160,6 @@ textarea {
 	resize: none;
 }
 
-input[type=text]:focus,
-textarea:focus,
-input[type=submit]:focus,
-a.button:focus {
-	outline: 0;
-}
-
 input[type=submit],
 a.button {
 	background: transparent;
@@ -264,15 +178,6 @@ a.button {
 	text-transform: uppercase;
 	z-index: 10;
 }
-
-input[type=submit]:hover,
-a.button:hover {
-	background: #00dd00;
-	color: #383838;
-	opacity: 0.8;
-}
-
-.expandingArea { position: relative }
 	
 .scanline {
 	animation: scroll 10s 5s infinite;
@@ -289,18 +194,6 @@ a.button:hover {
 		top: -5%;
 	z-index: 2;
 }
-
-.clear {
-	clear: both;
-}
-
-.clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-
-.upper { text-transform: uppercase; }
-
 
 #fieldset {
     display:flex;

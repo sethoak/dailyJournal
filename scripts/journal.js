@@ -51,4 +51,4 @@ const makeJournalEntryComponent = journalEntry => {
 const renderJournalEntries = entries => {};
 
 // Invoke the render function
-//renderJournalEntries(journalEntries);
+renderJournalEntries(journalEntry);
