@@ -1,0 +1,80 @@
+/*Importing custom font*/
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+/*BG*/
+overlay:before {
+  background: linear-gradient(#101010 50%, rgba(16, 16, 16, 0.2) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.03),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.03)
+    );
+  background-size: 100% 3px, 6px 100%;
+  content: "";
+  display: block;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.overlay:after {
+  animation: flicker 0.3s infinite;
+  background: rgba(16, 16, 16, 0.2);
+  content: "";
+  display: block;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/*Wrapper*/
+.wrapper {
+  animation: scroll 5s 1;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+}
+
+.overlay {
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+}
+
+.imgCol {
+  float: left;
+  padding: 0 20px;
+}
+
+.introText {
+  width: auto;
+}
+
+/*NAV*/
+nav.site {
+  margin: 0 0 40px 0;
+  width: 100%;
+}
+
+nav.site ul {
+  padding: 0;
+}
+
+nav.site ul li {
+  display: inline-block;
+  padding: 0 10px;
+  min-width: 250px;
+  width: auto;
+}
