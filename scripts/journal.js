@@ -52,3 +52,5 @@ const renderJournalEntries = entries => {};
 
 // Invoke the render function
 renderJournalEntries(journalEntry);
+
+console.log("journalEntry", journalEntry);
