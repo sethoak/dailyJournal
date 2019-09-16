@@ -40,10 +40,10 @@ const makeJournalEntryComponent = journalEntry => {
   return `
     <div class="entryLog">
     <ul>
-      <li>${date}</li>
-      <li>${mood}</li>
-      <li>${subject}</li>
-      <li>${entry}</li>
+      <li>${journalEntry.date}</li>
+      <li>${journalEntry.mood}</li>
+      <li>${journalEntry.subject}</li>
+      <li>${journalEntry.entry}</li>
     </ul>
     </div>
   `;
