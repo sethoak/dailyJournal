@@ -45,12 +45,13 @@ const makeJournalEntryComponent = journalEntry => {
       <li>${subject}</li>
       <li>${entry}</li>
     </ul>
+    </div>
   `;
 };
 
 const renderJournalEntries = entries => {};
 
 // Invoke the render function
-renderJournalEntries(journalEntry);
+makeJournalEntryComponent(journalEntry);
 
 console.log("journalEntry", journalEntry);
