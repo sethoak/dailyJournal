@@ -38,7 +38,7 @@ const entryTags = ["date", "mood", "subject", "entry"];
 const makeJournalEntryComponent = journalEntry => {
   // Create your own HTML structure for a journal entry
   return `
-    <div class="entryLog">
+    <div>
     <ul>
       <li>${journalEntry.date}</li>
       <li>${journalEntry.mood}</li>
@@ -49,9 +49,18 @@ const makeJournalEntryComponent = journalEntry => {
   `;
 };
 
-const renderJournalEntries = entries => {};
+const renderJournalEntries = entries => {
+  for (i = 0; i < entries.length; i++) {
+    document.querySelector(".entryLog").innerHTML += makeJournalEntryComponent(
+      entries[i]
+    );
+    console.log(entries[i]);
+  }
+};
 
-// Invoke the render function
-makeJournalEntryComponent(journalEntry);
+//write a for each for each journal entry to be set equal to
 
-console.log("journalEntry", journalEntry);
+console.log(renderJournalEntries, "renderJournalEntries");
+
+// Invoke the render journal entries
+renderJournalEntries(journalEntry);
