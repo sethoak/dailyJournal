@@ -1,5 +1,3 @@
-
-
 //Journal Part 3
 
 const entryTags = ["date", "mood", "subject", "entry"];
@@ -32,4 +30,13 @@ const renderJournalEntries = entries => {
 console.log(renderJournalEntries, "renderJournalEntries");
 
 // Invoke the render journal entries
-renderJournalEntries(journalEntry);
+//Part 4
+const API = {
+  journalEntries: () => {
+    return fetch("http://localhost:3000/journalEntries")
+      .then(response => response.json())
+      .then(journalEntries => renderJournalEntries(journalEntries));
+  }
+};
+
+API.journalEntries();
