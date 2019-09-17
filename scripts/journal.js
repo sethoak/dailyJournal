@@ -1,17 +1,6 @@
-//Journal Part 3
+import API from "./data.js";
+import renderJournalEntries from "./entriesDOM.js";
 
-const entryTags = ["date", "mood", "subject", "entry"];
-
-const makeJournalEntryComponent = journalEntry => {
-  // Create your own HTML structure for a journal entry
-  return `
-    <div>
-    <ul>
-      <li>${journalEntry.date}</li>
-      <li>${journalEntry.mood}</li>
-      <li>${journalEntry.subject}</li>
-      <li>${journalEntry.entry}</li>
-    </ul>
-    </div>
-  `;
-};
+API.getJournalEntries().then(results => {
+  renderJournalEntries(results);
+});
