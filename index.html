@@ -11,50 +11,51 @@
   <body>
     <!--
     <div class="overlay"></div>
-    
     <div class="scanline"></div>
     -->
+    <div id="wrapper">
+      <h1>Daily Journal</h1>
+      <p>
+        Welcome to the Daily Journal Entry presented by Seth Oakley at the
+        Nashville Software school! <br />Please be honest in your journal entry.
+        The system administrator frowns upon falsifying journal entries.
+        <br />Have a great day!
+      </p>
+      <form action="">
+        <fieldset>
+          <label for="journalDate"><h2>Date of entry</h2></label>
+          <input type="date" name="journalDate" id="journalDate" />
+        </fieldset>
 
-    <h1>Daily Journal</h1>
-    <p>
-      Welcome to the Daily Journal Entry presented by Seth Oakley at the
-      Nashville Software school! <br />Please be honest in your journal entry.
-      The system administrator frowns upon falsifying journal entries.
-      <br />Have a great day!
-    </p>
-    <form action="">
-      <fieldset>
-        <label for="journalDate">Date of entry</label>
-        <input type="date" name="journalDate" id="journalDate" />
-      </fieldset>
+        <fieldset>
+          <label for="conceptsCovered"><h2>Concepts Covered</h2></label>
+          <input type="text" name="conceptsCovered" id="conceptsCovered" />
+        </fieldset>
 
-      <fieldset>
-        <label for="conceptsCovered">Concepts Covered</label>
-        <input type="text" name="conceptsCovered" id="conceptsCovered" />
-      </fieldset>
+        <fieldset>
+          <label for="journalEntry"><h2>Journal Entry</h2></label>
 
-      <fieldset>
-        <label for="journalEntry">Journal Entry</label>
+          <textarea rows="3" cols="20" class="journalEntryArea"></textarea>
+        </fieldset>
 
-        <textarea rows="3" cols="20>"></textarea>
-      </fieldset>
+        <fieldset>
+          <label for="mood"
+            ><h2>Mood:</h2>
 
-      <fieldset>
-        <label for="mood"
-          >Mood:
-          <select name="mood">
-            <option value="option">Select Option</option>
-            <option value="happy">Happy</option>
-            <option value="depressed">Depressed</option>
-            <option value="ok">OK</option>
-          </select>
-        </label>
-      </fieldset>
+            <select name="mood">
+              <option value="option">Select Option</option>
+              <option value="happy">Happy</option>
+              <option value="depressed">Depressed</option>
+              <option value="ok">OK</option>
+            </select>
+          </label>
+        </fieldset>
 
-      <button>Record Journal Entry</button>
-    </form>
+        <button>Record Journal Entry</button>
+      </form>
 
-    <article class="entryLog"></article>
-    <script type="module" src="scripts/journal.js"></script>
+      <article class="entryLog"></article>
+      <script type="module" src="scripts/journal.js"></script>
+    </div>
   </body>
 </html>

@@ -1,3 +1,5 @@
+//this JS file is dependant because of makeJournalEntryComponent inside the renderJournal
+//entries function.
 import makeJournalEntryComponent from "./entryComponent.js";
 
 /*
